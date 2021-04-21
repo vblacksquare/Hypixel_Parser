@@ -27,7 +27,8 @@
         I imported library argparse to parse arguments
 
 ### How to use:
-    1) You need to check if you have Python 3.x on your, just download it by link https://www.python.org/
+    1) You need to check if you have Python 3.x on your PC (just download it by link https://www.python.org/)
     2) Also program needs some additional libraries, so you need to run in terminal pip install -r requirements.txt
     3) And finally run python3 main.py -h, to know avaible commands
-    4) If you are running it at first time, run python3 main.py -func update
+    4) If you are running it at first time, run python3 main.py -func update to update db
+
