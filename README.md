@@ -9,13 +9,14 @@
 
 ### Description:
     1) Getting orders from hypixel auctions:
-        a) To do this, I found official hypixel api(https://api.hypixel.net/). 
+        a) To parse orders I found official hypixel api (https://api.hypixel.net/). 
         b) We can request api with https://api.hypixel.net/skyblock/auctions?page=1&key=your_key
         c) To get your own api key, you have to join offical hypixel minecraft server and type command /api
+        d) To parse a lot of pages very fast, I used a great framework Scrapy.
+        e) The response from hypixel api is in the json format, so I had to use library json to transform text to dictionary.
     
     2) Saving them into db:
         a) I chose sqlite3 coz it is very simple and fast enough.
-        b) The response from hypixel api is in json format, so I had to use json parser (base library)
         c) I created a class DbHandler to work with db, and created copy of the class in the settings.py
         c) Saving them into db by method upload_order_to_db of class DbHandler that I created
     
