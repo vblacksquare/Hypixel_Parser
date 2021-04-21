@@ -1,5 +1,5 @@
 ### Hello:
-    This is a hypixel auctions parser. I`am poop programmer so my code is poop too.
+    This is a hypixel auctions parser.
 
 # Idea:
     1)Get all orders from hypixel auctions
