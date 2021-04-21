@@ -17,7 +17,7 @@
     
     2) Saving them into db:
         a) I chose sqlite3 coz it is very simple and fast enough.
-        c) I created a class DbHandler to work with db, and created copy of the class in the settings.py
+        b) I created a class DbHandler to work with db, and created copy of the class in the settings.py
         c) Saving them into db by method upload_order_to_db of class DbHandler that I created
     
     3) Getting orders from db:
@@ -25,7 +25,7 @@
         b) After you got needed data, analyze it.
     
     4) Configuring it to run throw Terminal or Cmd:
-        I imported library argparse to parse arguments
+        a) I imported library argparse to parse arguments
 
 ### How to use:
     1) You need to check if you have Python 3.x on your PC (just download it by link https://www.python.org/)
