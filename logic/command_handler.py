@@ -4,7 +4,7 @@ from hypixel_parser.spiders.main import run_spider
 
 
 def handler_args():
-    args_parser = ArgumentParser(description='test')
+    args_parser = ArgumentParser(description='Get hypixel auction orders')
 
     for input_arg in input_args:
         args_parser.add_argument(
@@ -39,7 +39,7 @@ functions = {
 input_args = (
     {'input_arg': 'func', 'type': str, 'default': 'update',
      'help': ''.join(("choose function from available: ",
-        *(f'{function}, args:{[f"-{arg}" for arg in functions[function]["args"]]};' for function in functions))),
+        *(f'{function}, args:{[f"-{arg}" for arg in functions[function]["args"]]}; ' for function in functions))),
      },
     {'input_arg': 'min', 'type': int, 'default': 0,
      'help': 'sets t\nhe minimum price of the order'
@@ -51,7 +51,7 @@ input_args = (
      'help': 'sets the minimum amount of bin/bid order`s price difference',
      },
     {'input_arg': 'full', 'type': str, 'default': 'N',
-     'help': 'sets y/Y to find by full name, or n/N to find by short name',
+     'help': 'sets y/Y to find by full name, or n/N to find by short name (without item prefixies and some trash chars)',
      },
     {'input_arg': 'name', 'type': str, 'default': 'Null',
      'help': 'sets the name of the order to find'

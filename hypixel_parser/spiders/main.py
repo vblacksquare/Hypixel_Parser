@@ -3,13 +3,12 @@ import scrapy
 from sys import stdout
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
-from settings import db
+from settings import db, api_key
 
 
 class MainSpider(scrapy.Spider):
     name = 'main'
     count = 0  # to count parsed orders
-    api_key = 'cb12f489-a719-4e86-a296-e7419a055f7a'  # hypixel api key
     hypixel_url = f'https://api.hypixel.net/skyblock/auctions?key={api_key}'  # url to parse
 
     def start_requests(self):
